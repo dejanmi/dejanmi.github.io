@@ -1,0 +1,1066 @@
+/*
+
+Volton Template
+
+http://www.templatemo.com/tm-441-volton
+
+*/
+
+@font-face {
+  font-family: 'robotolight';
+  src: url("../fonts/Roboto-Light-webfont.eot");
+  src: url("../fonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light-webfont.woff") format("woff"), url("../fonts/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/Roboto-Light-webfont.svg#robotolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../fonts/Roboto-Regular-webfont.eot");
+  src: url("../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotobold';
+  src: url("../fonts/Roboto-Bold-webfont.eot");
+  src: url("../fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold-webfont.woff") format("woff"), url("../fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("../fonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*---------------------------------------------------------
+ 1. Reset
+-------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+.blue {
+	color: #06C;
+}
+
+.green {
+	color: #090;
+}
+
+.blue-grey {
+  color: #5f6d7e;
+}
+
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button,
+input {
+  line-height: normal;
+  *overflow: visible;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+input[type="search"]:-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/*---------------------------------------------------------
+ 2. Basic Style
+-------------------------------------------------------- */
+b.paper-title {
+  color: #22252b;
+}
+
+body {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+  font-family: 'robotoregular';
+  overflow-x: hidden;
+}
+
+a {
+  color: #006699;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  text-decoration: none !important;
+}
+a:hover {
+  color: #555555;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #555555;
+}
+
+::-webkit-input-placeholder {
+  color: #999999;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #999999;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #999999;
+}
+
+:-ms-input-placeholder {
+  color: #999999;
+}
+
+.main-content,
+.banner-bg {
+  float: right;
+  width: 77%;
+}
+.banner-bg .fa-angle-right {
+  color: #00ff00;
+}
+@media screen and (max-width: 1290px) {
+  .main-content,
+  .banner-bg {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .main-content,
+  .banner-bg {
+    width: 100%;
+  }
+}
+
+.content-wrapper {
+  padding: 0 50px 0 50px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 992px) {
+  .content-wrapper {
+    padding: 0 30px;
+  }
+}
+
+h4.widget-title {
+  font-size: 16px;
+  font-family: 'robotobold';
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+h5.widget-title {
+  font-size: 14px;
+  font-family: 'robotobold';
+  margin-bottom: 20px;
+}
+
+hr {
+  position: relative;
+  outline: 0;
+  border: 0;
+  width: 100%;
+  height: 4px;
+  background: #dddddd;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.page-section {
+  padding-top: 50px;
+}
+
+/*---------------------------------------------------------
+ 3. Header
+-------------------------------------------------------- */
+.sidebar-menu {
+  float: left;
+  width: 23%;
+  height: 100%;
+  position: fixed;
+  background-color: #53655c;
+  color: white;
+  overflow-y: auto;
+}
+@media screen and (max-width: 1290px) {
+  .sidebar-menu {
+    overflow-y: auto;
+    width: 30%;
+  }
+}
+
+.top-section {
+  padding: 40px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border: 4px solid white;
+  -webkit-border-radius: 75px;
+  border-radius: 75px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.profile-image img {
+  width: 100%;
+}
+
+h3.profile-title {
+  margin-bottom: 5px;
+  color: white;
+  font-size: 18px;
+  font-family: 'robotobold';
+}
+
+.main-navigation {
+  margin: 10px 0;
+}
+.main-navigation li {
+  display: block;
+}
+.main-navigation li.highlight {
+  background: #334050;
+}
+.main-navigation li a {
+  padding: 12px;
+  padding-right: 0px;
+  padding-left: 30px;
+  display: block;
+  color: white;
+  font-size: 14px;
+}
+.main-navigation li a i {
+  margin-right: 15px;
+  font-size: 24px;
+}
+.main-navigation li a:hover {
+  background: #414E5E;
+}
+.main-navigation li a.active {
+  background: #495461;
+}
+.main-navigation li a.active:hover {
+  background: #495461;
+}
+
+.social-icons {
+  display: block;
+  padding: 0px 40px;
+  text-align: center;
+}
+.social-icons li {
+  display: inline-block;
+}
+.top-section a {
+  color: #ffd6ba;
+}
+.top-section a:hover {
+  color: #282e35;
+}
+.social-icons a {
+  font-size: 18px;
+  color: white;
+}
+.social-icons a:hover {
+  color: #282e35;
+}
+
+.ai-google-scholar {
+  -webkit-text-stroke: 0.5px;
+}
+
+.ai-arxiv {
+  -webkit-text-stroke: 0.5px;
+}
+
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+}
+
+.responsive-header {
+  background: #53655c;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .responsive-header .main-navigation {
+    margin-top: 10px;
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .responsive-header p {
+    color: white;
+  }
+}
+@media screen and (max-width: 992px) {
+  .responsive-header .profile-image {
+    float: left;
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 30px;
+  }
+  .responsive-header .profile-content {
+    text-align: left;
+    margin-top: 5px;
+    overflow: hidden;
+  }
+  .responsive-header .social-icons {
+    text-align: left;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .top-section {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main-navigation a {
+    padding: 10px;
+  }
+  .main-navigation a.active {
+    background: #53655c !important;
+  }
+  .main-navigation a:hover {
+    background: #53655c !important;
+  }
+}
+
+.toggle-menu {
+  width: 100%;
+  display: block;
+  padding: 20px;
+  margin-top: 30px;
+  background: #a3aeb1;
+  color: white;
+  font-size: 18px;
+}
+.toggle-menu:hover {
+  color: white;
+}
+
+/*---------------------------------------------------------
+ 4. Main Content
+-------------------------------------------------------- */
+/*------ link underlines ------*/
+/*.stanford-red-underline {
+  text-decoration: none;
+  display: inline-table;
+  color: inherit;
+}
+
+.stanford-red-underline:hover {
+  background-color: rgba(200, 21, 21, 0.3);
+}
+
+.stanford-red-underline:after {
+  content: "";
+  border-bottom: 0.1em solid rgb(200, 21, 21);
+  display: table-caption;
+  caption-side: bottom;
+  position: relative;
+  margin-top:-0.05em;
+}
+
+.ai-blue-underline {
+  text-decoration: none;
+  display: inline-table;
+  color: inherit;
+}
+
+.ai-blue-underline:hover {
+  background-color: rgba(21, 162, 214, 0.3);
+}
+
+.ai-blue-underline:after {
+  content: "";
+  border-bottom: 0.1em solid rgb(21, 162, 214);
+  display: table-caption;
+  caption-side: bottom;
+  position: relative;
+  margin-top:-0.05em;
+}
+
+.uoft-blue-underline {
+  text-decoration: none;
+  display: inline-table;
+  color: inherit;
+}
+
+.uoft-blue-underline:hover {
+  background-color: rgba(4, 48, 150, 0.1);
+}
+
+.uoft-blue-underline:after {
+  content: "";
+  border-bottom: 0.15em solid rgb(4, 48, 150);
+  display: table-caption;
+  caption-side: bottom;
+  position: relative;
+  margin-top:-0.25em;
+}
+
+.amazon-orange-underline {
+  text-decoration: none;
+  display: inline-table;
+  color: inherit;
+}
+
+.amazon-orange-underline:hover {
+  background-color: rgba(248, 152, 29, 0.15);
+}
+
+.amazon-orange-underline:after {
+  content: "";
+  border-bottom: 0.15em solid rgb(248, 152, 29);
+  display: table-caption;
+  caption-side: bottom;
+  position: relative;
+  margin-top:-0.25em;
+}
+
+.eth-blue-underline {
+  text-decoration: none;
+  display: inline-table;
+  color: inherit;
+}
+
+.eth-blue-underline:hover {
+  background-color: rgba(31, 117, 254, 0.1);
+}
+
+.eth-blue-underline:after {
+  content: "";
+  border-bottom: 0.15em solid rgb(31, 117, 254);
+  display: table-caption;
+  caption-side: bottom;
+  position: relative;
+  margin-top:-0.25em;
+}*/
+
+/*------ banner ------ */
+.banner-bg {
+  padding: 60px 80px;
+  position: relative;
+  background: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+
+.banner-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(95, 109, 126, 0.4);
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.banner-overlay img {
+  height: 100%;
+  opacity: 0.3;
+  object-fit: cover;
+  width: 100%;
+  height:100%;
+  object-position: center 43%;
+}
+
+.welcome-text {
+  position: relative;
+  z-index: 4;
+}
+.welcome-text h2 {
+  font-size: 42px;
+  font-family: 'robotobold';
+  color: white;
+  margin-bottom: 30px;
+}
+.welcome-text h5 {
+  font-size: 22px;
+  color: white;
+}
+
+.welcome-text a {
+  color: white;
+}
+
+/*------ updates ------- */
+#updates {
+  padding-bottom: 1px;
+  margin-bottom: 40px;
+  background: #FFD6BA;
+  border-radius: 10px;
+}
+
+#updates .widget-title {
+  padding-top: 10px;
+  color: #444444;
+}
+
+#updates .update-date {
+  width: 120px;
+}
+
+#updates td {
+  padding-bottom: 4px;
+  color: #555555;
+}
+
+/*------ about us ------ */
+.about-image {
+  overflow: hidden;
+  border: 4px solid #dddddd;
+  margin-bottom: 40px;
+}
+.about-image img {
+  width: 100%;
+  display: block;
+}
+
+/*----- life item ---- */
+.life-item {
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+.life-item-img {
+  width: 150px; /* Set a fixed width for the container */
+  height: 150px; /* Set a fixed height for the container */
+  float: left;
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the image within the container */
+}
+
+.life-item-img img {
+  max-width: 100%;
+  max-height: 100%; /* Ensure the image doesn't exceed the container */
+  object-fit: contain; /* Maintain aspect ratio and scale the image */
+  display: block;
+}
+
+.life-item-pub-img {
+  width: 200px; /* Adjust the width as needed */
+  height: 200px; /* Set a fixed height for the container */
+  float: left;
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the image within the container */
+}
+
+.life-item-pub-img img {
+  max-width: 100%;
+  max-height: 100%; /* Ensure the image fits within the container */
+  object-fit: contain; /* Maintain aspect ratio and scale the image */
+  display: block;
+}
+
+
+.life-item-content {
+  width: 90%;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.life-item-content span {
+  float: right;
+}
+
+.life-item-content p {
+  word-wrap: break-word;
+}
+
+.life-item-content ul {
+  margin-left: 15px;
+  list-style: disc;
+}
+
+.life-item-content table {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.life-item-content td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.life-item-content img {
+  max-height: 100px;
+  max-width: 100%;
+}
+
+.life-item-highlight {
+  color: #3D9970;
+}
+
+.life-item-title {
+  display: inline-block;
+}
+
+.extra-space-loc {
+  padding-top: 3px;
+}
+
+.li-separator {
+  border-bottom: 1px #dddddd solid;
+  margin: 15px 0% 15px 0px;
+}
+
+.bulleted {
+  margin-left: 30px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
+
+/*------ projects ------ */
+.projects-holder {
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 40px;
+}
+.projects-holder .col-md-4,
+.projects-holder .col-md-4 {
+  padding-right: 1px;
+  padding-left: 1px;
+}
+
+.project-item {
+  width: 100%;
+  margin-bottom: 2px;
+  overflow: hidden;
+  position: relative;
+}
+.project-item img {
+  width: 100%;
+  display: block;
+}
+.project-item:hover .project-hover {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.project-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 40px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  visibility: 0;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.project-hover .inside {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 30px;
+}
+.project-hover h5 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.project-hover h5 a {
+  color: white;
+}
+.project-hover p {
+  color: white;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/*------ contact ------ */
+.contact-form {
+  margin-top: 40px;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  outline: 0;
+  border: 1px solid #aaaaaa;
+  padding: 12px;
+  color: #999999;
+  margin-bottom: 30px;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: 0;
+}
+.contact-form .button {
+  width: auto;
+  background: #53655c;
+  color: white;
+  text-transform: uppercase;
+  border: 0;
+}
+
+/*------ advising ------ */
+.advisees {
+  width: 100%;
+}
+
+.advisees tr:first-child {
+  border-bottom: 2px solid #ddd;
+}
+
+/* For single images */
+.content-image {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 30px; /* Increased padding for more spacing */
+  margin-bottom: 10px;
+}
+
+.content-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content-image video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* For side-by-side images */
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  padding: 0 30px; /* Increased padding for better spacing on window edges */
+}
+
+.image-column {
+  flex-basis: 48%;
+  text-align: center;
+}
+
+.image-column img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .image-column {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content-image {
+    max-width: 100%;
+  }
+}
+
+/* Target the widget-title only inside the header-quote-container */
+.header-quote-container .widget-title {
+  margin-bottom: 0px; 
+}
+
+/* Horizontal separator line */
+.separator-line {
+  border-bottom: 1px #dddddd solid;
+  margin: 15px 0% 15px 0px;
+}
+
+/* Citation container */
+.citation-container {
+  text-align: left; /* Align the quote to the left */
+  margin-left: 20px; /* Move the quote more to the right */
+  font-style: italic; /* Italicize the quote */
+  font-family: 'Georgia', serif; /* Choose a nice serif font for the quote */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Author (non-animated) */
+.citation-author {
+  font-style: normal; /* Author name not italicized */
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #777; /* Make the author's name a bit lighter */
+}
+
+.content-text {
+  margin-bottom: 10px;
+}
+
+.content-text ul {
+  list-style-type: disc; /* Adds bullet points */
+  padding-left: 20px; /* Adds space before the bullets */
+  margin-bottom: 10px; /* Consistent bottom margin */
+}
+
+.content-text li {
+  margin-bottom: 5px; /* Adjust spacing between list items */
+}
+
+/* Publication container */
+.publication-item {
+  margin-bottom: 20px; /* Reduced margin between publication entries */
+  padding: 5px;
+  border-left: 2px solid #e5e8eb; /* Thinner blue border */
+  background-color: #f9f9f9;
+  border-radius: 2px; /* Smaller rounded corners */
+}
+
+/* Paper title */
+.paper-title {
+  font-size: 14px; /* Smaller font size */
+  color: #333;
+  font-family: 'Georgia', serif;
+  display: block;
+  margin-bottom: 2px; /* Slight space between title and authors */
+  line-height: 1.1; /* Tighter line height */
+}
+
+/* Flexbox for authors and links */
+.authors-and-links {
+  display: flex;
+  justify-content: space-between; /* Place authors on the left, links on the right */
+  align-items: center; /* Vertically align the authors and links */
+  flex-wrap: wrap; /* Wrap to next line if content overflows */
+}
+
+/* Authors */
+.authors {
+  font-size: 12px; /* Smaller font size */
+  color: #555;
+  font-family: 'Arial', sans-serif;
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  line-height: 1.1; /* Tighter line height */
+}
+
+/* Links container */
+.publication-links {
+  font-size: 11px; /* Smaller font size for links */
+}
+
+/* Links for BibTeX and PDF */
+.publication-link {
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 10px; /* Space between links */
+  border-bottom: 1px dashed transparent;
+}
+
+.publication-link:hover {
+  border-bottom: 1px dashed #007bff;
+}
+
+
+.quick-access {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.quick-access-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: 'Georgia', serif;
+}
+
+.quick-access ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-access ul li {
+  margin-bottom: 5px;
+}
+
+.quick-access ul li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.quick-access ul li a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.research-page {
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .research-page {
+    padding: 0 15px;
+  }
+}
+
+/*---------------------------------------------------------
+ 5. Footer
+-------------------------------------------------------- */
+#footer p.copyright-text {
+  margin: 40px 0;
+  font-size: 13px;
+}
+#footer p.copyright-text a {
+  color: #53655c;
+}
+#footer p.copyright-text a:hover {
+  color: #6cc0f7;
+}

@@ -1,0 +1,8 @@
+@report{hohlad,
+  title={Automated Driving Sensor Testing Vehicle},
+  author={Hohl, C and Milojevic, D and Elser, M and Zgraggen, J and Vulin, N},
+  type={Forschungsprojekt ASTRA 2019/004 auf Antrag des Bundesamtes für
+    Strassen (ASTRA)},
+    year={2021},
+    url     = {https://plus.empa.ch/images/2021-04-26-autonomes-fahren-grosse-bilder/20210719_AutomatedDrivingSensorTestingVehicle.pdf}
+    }

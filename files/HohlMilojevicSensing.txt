@@ -1,0 +1,6 @@
+@article{hohlsensing,
+  title={Sensing and Perception in Automated Driving},
+  author={Hohl, C and Milojevic, D and Elser, M},
+  journal={Autonomes Fahren Ein Treiber zuk{\"u}nftiger Mobilit{\"a}t},
+  pages={64}
+}

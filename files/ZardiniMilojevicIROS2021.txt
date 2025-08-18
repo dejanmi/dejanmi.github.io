@@ -1,0 +1,10 @@
+@INPROCEEDINGS{9636513,
+  author={Zardini, Gioele and Milojevic, Dejan and Censi, Andrea and Frazzoli, Emilio},
+  booktitle={2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+  title={Co-design of Embodied Intelligence: A Structured Approach}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={7536-7543},
+  keywords={Analytical models;Pipelines;Propulsion;Control systems;Software;Hardware;Sensor systems},
+  doi={10.1109/IROS51168.2021.9636513}}

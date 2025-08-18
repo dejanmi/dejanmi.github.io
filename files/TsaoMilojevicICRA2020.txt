@@ -1,0 +1,10 @@
+@INPROCEEDINGS{8794194,
+  author={Tsao, Matthew and Milojevic, Dejan and Ruch, Claudio and Salazar, Mauro and Frazzoli, Emilio and Pavone, Marco},
+  booktitle={2019 International Conference on Robotics and Automation (ICRA)}, 
+  title={Model Predictive Control of Ride-sharing Autonomous Mobility-on-Demand Systems}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={6665-6671},
+  keywords={Roads;Automobiles;Prediction algorithms;Artificial neural networks;Analytical models;Optimization;Predictive models},
+  doi={10.1109/ICRA.2019.8794194}}
